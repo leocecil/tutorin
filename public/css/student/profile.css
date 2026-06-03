@@ -1,0 +1,316 @@
+.profile-page-wrapper {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding-bottom: 40px;
+        background-color: #f8fafc;
+        border-radius: 16px;
+        overflow: hidden;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    }
+
+    /* ── HEADER BANNER UTAMA (BLUE DARK) ── */
+    .profile-top-banner {
+        background-color: #e08c0a; /* Warna navy gelap sesuai tema Tutorin */
+        padding: 40px 24px 110px 24px;
+        text-align: center;
+        position: relative;
+    }
+
+    .profile-avatar-circle {
+        width: 100px;
+        height: 100px;
+        background-color: #1a2744; /* Background orange gold */
+        color: #f4f6f9;
+        font-size: 32px;
+        font-weight: 800;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 16px auto;
+        border: 4px solid rgba(255, 255, 255, 0.1);
+        font-family: 'DM Sans', sans-serif;
+    }
+
+    .profile-top-banner h1 {
+        color: #ffffff;
+        font-size: 28px;
+        font-weight: 700;
+        margin: 0 0 6px 0;
+    }
+
+    .profile-top-banner p {
+        color: #f4f6f9;
+        font-size: 14px;
+        margin: 0;
+    }
+
+    /* ── KONTEN BAWAH (GRID SYSTEM) ── */
+    .profile-content-grid {
+        padding: 0 32px;
+        margin-top: -70px; /* Menarik konten ke atas agar menumpuk di banner */
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 24px;
+        position: relative;
+        z-index: 10;
+    }
+
+    /* ── STATS CARDS BLOCK (SESSIONS & VOUCHERS) ── */
+    .stats-row-container {
+        display: flex;
+        gap: 16px;
+        margin-bottom: 20px;
+    }
+
+    .stat-mini-card {
+        flex: 1;
+        background: #ffffff;
+        border: 1px solid #e2e8f0;
+        border-radius: 14px;
+        padding: 20px 24px;
+    }
+
+    .stat-mini-card span {
+        font-size: 12px;
+        text-transform: uppercase;
+        color: #64748b;
+        font-weight: 700;
+        letter-spacing: 0.5px;
+    }
+
+    .stat-mini-card h2 {
+        font-size: 36px;
+        font-weight: 800;
+        color: #0f172a;
+        margin: 8px 0 4px 0;
+        font-family: 'DM Sans', sans-serif;
+    }
+
+    .stat-mini-card p {
+        font-size: 13px;
+        color: #64748b;
+        margin: 0;
+    }
+
+    /* ── MENU LIST GROUP (KOLOM KIRI) ── */
+    .menu-list-card {
+        background: #ffffff;
+        border: 1px solid #e2e8f0;
+        border-radius: 14px;
+        overflow: hidden;
+    }
+
+    .menu-item-link {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 18px 24px;
+        text-decoration: none;
+        color: #334155;
+        border-bottom: 1px solid #f1f5f9;
+        transition: background 0.2s;
+    }
+
+    .menu-item-link:last-child {
+        border-bottom: none;
+    }
+
+    .menu-item-link:hover {
+        background-color: #f8fafc;
+    }
+
+    .menu-item-left {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+    }
+
+    .menu-icon-wrapper {
+        width: 36px;
+        height: 36px;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .menu-text-block h4 {
+        font-size: 14px;
+        font-weight: 600;
+        color: #0f172a;
+        margin: 0 0 2px 0;
+    }
+
+    .menu-text-block p {
+        font-size: 12px;
+        color: #64748b;
+        margin: 0;
+    }
+
+    .menu-item-link.logout-item h4 {
+        color: #ef4444;
+    }
+
+    /* ── SIDEBAR CARDS (KOLOM KANAN) ── */
+    .sidebar-block-card {
+        background: #ffffff;
+        border: 1px solid #e2e8f0;
+        border-radius: 14px;
+        padding: 24px;
+        margin-bottom: 20px;
+    }
+
+    .sidebar-block-card.dark-theme {
+        background-color: #f5a623;
+        border: none;
+        color: #ffffff;
+        position: relative;
+    }
+
+    .sidebar-block-card.dark-theme h3 {
+        font-size: 16px;
+        font-weight: 700;
+        margin: 0 0 16px 0;
+        color: #ffffff;
+    }
+
+    .tutor-mini-profile {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 16px;
+    }
+
+    .tutor-mini-avatar {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    .tutor-mini-info h4 {
+        font-size: 14px;
+        font-weight: 600;
+        margin: 0 0 2px 0;
+        color: #ffffff;
+    }
+
+    .tutor-mini-info p {
+        font-size: 12px;
+        color: #cbd5e1;
+        margin: 0;
+    }
+
+    .schedule-badge-info {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 12px;
+        color: #f1f5f9;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+    }
+
+    .btn-action-block {
+        display: block;
+        width: 100%;
+        background: #1a2744;
+        color: #f4f6f9;
+        text-align: center;
+        padding: 12px;
+        border-radius: 10px;
+        font-size: 14px;
+        font-weight: 700;
+        text-decoration: none;
+        transition: background 0.2s;
+    }
+
+    .btn-action-block:hover {
+        background: #d97706;
+    }
+
+    /* Card Bantuan / Help Center */
+    .help-title {
+        font-size: 15px;
+        font-weight: 700;
+        color: #0f172a;
+        margin: 0 0 8px 0;
+    }
+
+    .help-desc {
+        font-size: 13px;
+        color: #64748b;
+        line-height: 1.5;
+        margin: 0 0 16px 0;
+    }
+
+    .link-help-action {
+        font-size: 13px;
+        color: #0f172a;
+        font-weight: 600;
+        text-decoration: none;
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+    }
+
+    .link-help-action:hover {
+        text-decoration: underline;
+    }
+
+    /* Toggle Switch untuk Notifikasi */
+    .switch-toggle {
+        position: relative;
+        display: inline-block;
+        width: 44px;
+        height: 24px;
+    }
+
+    .switch-toggle input { 
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+
+    .slider-toggle {
+        position: absolute;
+        cursor: pointer;
+        top: 0; left: 0; right: 0; bottom: 0;
+        background-color: #cbd5e1;
+        transition: .3s;
+        border-radius: 24px;
+    }
+
+    .slider-toggle:before {
+        position: absolute;
+        content: "";
+        height: 18px;
+        width: 18px;
+        left: 3px;
+        bottom: 3px;
+        background-color: white;
+        transition: .3s;
+        border-radius: 50%;
+    }
+
+    input:checked + .slider-toggle {
+        background-color: #f59e0b;
+    }
+
+    input:checked + .slider-toggle:before {
+        transform: translateX(20px);
+    }
+
+    /* Responsif Layar Kecil */
+    @media (max-width: 768px) {
+        .profile-content-grid {
+            grid-template-columns: 1fr;
+            padding: 0 16px;
+        }
+        .stats-row-container {
+            flex-direction: column;
+        }
+    }
