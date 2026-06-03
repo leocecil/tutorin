@@ -1,3 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+
+    <title>@yield('title', 'Tutorin')</title>
+    </head>
+<body>
+    </body>
+</html>
+
 @extends('layouts.app_tutor')
 
 @push('styles')
@@ -162,7 +176,7 @@
             <div class="navy-bg text-white rounded-3xl p-8 relative overflow-hidden">
                 <h3 class="text-2xl font-bold mb-4">Earning Tip</h3>
                 <p class="text-slate-300 leading-relaxed mb-6" style="color: #f9f9f9">
-                    Tutors who host group revision packages ahead of final exams increase their monthly payouts by up to <span class="text-amber-400 font-bold">35%</span>.
+                    Tutors who host group revision packages ahead of final exams increase their monthly payouts by up to <span class="text-amber-400 font-bold" style="color: #f9f9f9">35%</span>.
                 </p>
                 <a href="#" class="inline-flex items-center gap-2 text-amber-400 font-bold hover:gap-3 transition-all" style="color: #f9f9f9">
                     Create Group Package <i class="fa-solid fa-arrow-right"></i>

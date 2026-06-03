@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <title>Masuk & Daftar — Tutorin</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -424,7 +425,7 @@
     function handlePrototypeLogin(event) {
         event.preventDefault();
         alert('Login berhasil! (Simulasi)\nEmail: ' + document.getElementById('email').value);
-        window.location.href = 'dashboard.html';
+        window.location.href = '{{ route('student.home') }}';
     }
 
     function handlePrototypeRegister(event, role) {
